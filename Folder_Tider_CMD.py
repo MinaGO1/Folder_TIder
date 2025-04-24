@@ -93,7 +93,7 @@ def organize_files(folder_path: Path) -> None:
         
         elif file.is_dir():
             # Skip if the folder is already a target folder (e.g., 'Folders', 'IMAGES', etc.)
-            if file.name in FILE_TYPES.keys() or file.name in ['OTHERS', 'Folders','Gsconnect']:
+            if file.name in FILE_TYPES.keys() or file.name in ['OTHERS', 'Folders','From my Phone']:
                 continue
             
             try:
